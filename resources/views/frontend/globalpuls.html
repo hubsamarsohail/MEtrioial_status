@@ -1,0 +1,1325 @@
+<!--{{&#45;&#45;@extends('frontend.frontend');&#45;&#45;}}-->
+<!--{{&#45;&#45;@section('title') GlobalPuls | LoginView @endsection&#45;&#45;}}-->
+<!--{{&#45;&#45;@section('content')&#45;&#45;}}-->
+<!--{{&#45;&#45;	<div class="topbar stick">&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="logo">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<a title="" href="#"><img src="images/logo1.png" alt="logo"></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="top-area">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="main-menu">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>&#45;&#45;}}-->
+<!--{{&#45;&#45;			    	<i class="fa fa-braille"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;			    </span>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="top-search">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<form method="post" class="">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<input type="text" placeholder="Search People, Pages, Groups etc">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<button data-ripple><i class="ti-search"></i></button>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="page-name">&#45;&#45;}}-->
+<!--{{&#45;&#45;			    <span>Global Puls</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;			 </div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<ul class="setting-area">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<a href="#" title="Notification" data-ripple="">&#45;&#45;}}-->
+<!--{{&#45;&#45;		\				<i class="fa fa-bell"></i><em class="bg-purple">7</em>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="dropdowns">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span>4 New Notifications <a href="#" title="">Mark all as read</a></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<ul class="drops-menu">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-1.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>sarah Loren</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span>commented on your new profile status</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>2 min ago</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-2.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Jhon doe</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span>Nicholas Grissom just became friends. Write on his wall.</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>4 hours ago</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span>Today is Marina Valentine’s Birthday! wish for celebrating</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img src="images/birthday.png" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-3.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Andrew</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span>commented on your photo.</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>Sunday</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span>"Celebrity looks Beautiful in that outfit! We should see each"</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img src="images/resources/admin.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-4.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Tom cruse</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span>nvited you to attend to his event Goo in</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>May 19</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="tag">New</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-5.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Amy</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span>Andrew Changed his profile picture. </span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>dec 18</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="tag">New</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<a href="#" title="" class="more-mesg">View All</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<a href="#" title="Messages" data-ripple=""><i class="fa fa-commenting"></i><em class="bg-blue">9</em></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="dropdowns">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span>5 New Messages <a href="#" title="">Mark all as read</a></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<ul class="drops-menu">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a class="show-mesg" href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-1.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>sarah Loren</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span><i class="ti-check"></i> Hi, how r u dear ...?</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>2 min ago</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a class="show-mesg" href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-2.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Jhon doe</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span><i class="ti-check"></i> We’ll have to check that at the office and see if the client is on board with</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>2 min ago</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a class="show-mesg" href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-3.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Andrew</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span> <i class="fa fa-paperclip"></i>Hi Jack's! It’s Diana, I just wanted to let you know that we have to reschedule..</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>2 min ago</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a class="show-mesg" href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-4.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Tom cruse</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span><i class="ti-check"></i> Great, I’ll see you tomorrow!.</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>2 min ago</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="tag">New</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a class="show-mesg" href="#" title="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/resources/thumb-5.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span class="status f-away"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="mesg-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h6>Amy</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span><i class="fa fa-paperclip"></i> Sed ut perspiciatis unde omnis iste natus error sit </span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<i>2 min ago</i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="tag">New</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<a href="#" title="" class="more-mesg">View All</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#" title="Help" data-ripple=""><i class="fa fa-question-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="dropdowns helps">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span>Quick Help</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<form method="post">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<input type="text" placeholder="How can we help you?">&#45;&#45;}}-->
+<!--{{&#45;&#45;						</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span>Help with this page</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<ul class="help-drop">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-book"></i>Community & Forum</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-question-circle-o"></i>FAQs</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-building-o"></i>Carrers</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-pencil-square-o"></i>Terms & Policy</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-map-marker"></i>Contact</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-exclamation-triangle"></i>Report a Problem</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="user-img">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<h5>Jack Carter</h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<img src="images/resources/admin.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="user-setting">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<span class="seting-title">Chat setting <a href="#" title="">see all</a></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<ul class="chat-setting">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="#" title=""><span class="status f-online"></span>online</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="#" title=""><span class="status f-away"></span>away</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="#" title=""><span class="status f-off"></span>offline</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<span class="seting-title">User setting <a href="#" title="">see all</a></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<ul class="log-out">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="#" title=""><i class="ti-user"></i> view profile</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="#" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="#" title=""><i class="ti-settings"></i>account setting</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li><a href="logout.html" title=""><i class="ti-power-off"></i>log out</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<span class="ti-settings main-menu" data-ripple=""></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<nav>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<ul class="nav-list">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#">Courses</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#">Relegious Center</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#">Tour & Trips</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#">Video Clips</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#">Ads</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li><a href="#">Job Ads</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</ul>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;		</nav>&lt;!&ndash; nav menu &ndash;&gt;&#45;&#45;}}-->
+<!--{{&#45;&#45;	</div>&lt;!&ndash; topbar &ndash;&gt;&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	<div class="fixed-sidebar right">&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="chat-friendz">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<ul class="chat-users">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend1.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend2.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-away"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend3.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend4.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend5.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend6.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend7.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend8.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend9.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-away"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend10.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-away"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="author-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<img src="images/resources/side-friend8.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="chat-box">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="chat-head">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<h6>Bucky Barnes</h6>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="more-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<li>block chat</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<li>unblock chat</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<li>conversation</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span class="close-mesage"><i class="ti-close"></i></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="chat-list">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li class="me">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="chat-thumb"><img src="images/resources/chatlist1.jpg" alt=""></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="notification-event">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="chat-message-item">&#45;&#45;}}-->
+<!--{{&#45;&#45;									HI, Jack i have faced a problem with your software. are you available now, when i install this i have to received an error.&#45;&#45;}}-->
+<!--{{&#45;&#45;								</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="notification-date"><time datetime="2004-07-24T18:18" class="entry-date updated">Today at 2:12pm</time></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li class="you">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="chat-thumb"><img src="images/resources/chatlist2.jpg" alt=""></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="notification-event">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="chat-message-item">&#45;&#45;}}-->
+<!--{{&#45;&#45;									Hi tina, Please let me know your purchase code, and show me the screnshot of error.&#45;&#45;}}-->
+<!--{{&#45;&#45;								</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="notification-date"><time datetime="2004-07-24T18:18" class="entry-date updated">Today at 2:14pm</time></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<li class="me">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="chat-thumb"><img src="images/resources/chatlist1.jpg" alt=""></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="notification-event">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="chat-message-item">&#45;&#45;}}-->
+<!--{{&#45;&#45;									Yes, sure please wait a while, i ll show you the complete error list. Thank you.&#45;&#45;}}-->
+<!--{{&#45;&#45;								</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span class="notification-date"><time datetime="2004-07-24T18:18" class="entry-date updated">Today at 2:15pm</time></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<form class="text-box">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<textarea placeholder="Post enter to post..."></textarea>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="add-smiles">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<span title="add icon" class="em em-expressionless"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="smiles-bunch">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-&#45;&#45;1"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-smiley"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-anguished"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-laughing"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-angry"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-astonished"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-blush"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-disappointed"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-worried"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-kissing_heart"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-rage"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<i class="em em-stuck_out_tongue"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;						<button type="submit"></button>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</div>&lt;!&ndash; right sidebar user chat &ndash;&gt;&#45;&#45;}}-->
+<!--{{&#45;&#45;&lt;!&ndash;		&ndash;&gt;&#45;&#45;}}-->
+<!--{{&#45;&#45;	<section>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="gap2 no-bottom">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="container-fluid ext-right">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="row">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="col-lg-12">&#45;&#45;}}-->
+
+<!--{{&#45;&#45;						<div class="featured-baner mate-black ext-low-opacity">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="sub-links">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<a class="main-btn" title="" href="#">Register Now</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="heart-pnts">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div><i class="fa fa-heart"></i><span>56.4k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<a title="" href="#">your Heart Points</a>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;									<a title="" href="#">upgrade your profile</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<img src="images/resources/pitpoint-feature.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<h2>Find Your Perfect <span>Match</span> Now</h2>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</section>&#45;&#45;}}-->
+<!--{{&#45;&#45;	<section>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="gap2 no-gap overlap">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="container-fluid ext-right">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="row">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="col-lg-12">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="search-match">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<h5>find for me <span>best match</span></h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<form method="post">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<ul class="select-gender">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li class="selected">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/male.png" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<img src="images/female.png" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="chk">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="checkbox">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<label>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<input type="checkbox" checked="checked"><i class="check-box"></i>with photo&#45;&#45;}}-->
+<!--{{&#45;&#45;										</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="checkbox">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<label>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<input type="checkbox" checked="checked"><i class="check-box"></i>without photo&#45;&#45;}}-->
+<!--{{&#45;&#45;										</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="checkbox">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<label>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<input type="checkbox" checked="checked"><i class="check-box"></i>with video&#45;&#45;}}-->
+<!--{{&#45;&#45;										</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="age-opt">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<label>Age:</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<select style="display: none;">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>18</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>19</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>20</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>21</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</select>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<p>-</p>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<select style="display: none;">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>22</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>23</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>24</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<option>25</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</select>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="oth-opt">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="loc">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<label>Location:</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<input type="text" placeholder="location">&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<button type="submit"><i class="fa fa-search"></i> Find</button>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</section>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	<section>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="gap gray-bg">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="container-fluid ext-right">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="row" id="page-contents">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="col-lg-3">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<aside class="sidebar static left">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="friend-box">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="frnd-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<img alt="" src="images/resources/frnd-figure3.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="frnd-name">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a title="" href="#">Jack Carter</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<span>@jack5000</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<a class="main-btn2" href="#" title="">Follow</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<ul class="menu-list">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li><a href="#" title="" data-ripple=""><i class="fa fa-home"></i>Home</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li><a href="#" title="" data-ripple=""><i class="fa fa fa-check-circle-o"></i>Match Mark</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li><a href="#" title="" data-ripple=""><i class="fa fa-history"></i>History</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li><a href="#" title="" data-ripple=""><i class="fa fa-certificate"></i>My Dates</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li><a href="#" title="" data-ripple=""><i class="fa fa-fire"></i>Case Studies</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li><a href="#" title="" data-ripple=""><i class="fa fa-sun-o"></i>Privacy & Policy</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li><a href="#" title="" data-ripple=""><i class="fa fa-question-circle"></i>Help</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="widget">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<h4 class="widget-title">Most Active People</h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<ul class="most-actie-pep">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Sandy" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend1.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Andrew" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend2.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Sapna" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend3.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Emily" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend4.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Xing Xang" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend5.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Sophia" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend6.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="George" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend7.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Katy" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend8.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Luci" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend9.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<a href="#" title="Diana" class="user-thmb">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<img alt="" src="images/resources/side-friend10.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&lt;!&ndash; Most active people widget &ndash;&gt;&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="widget stick-widget">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<h4 class="widget-title">Success Stories</h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<ul class="succes-people">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<figure><img src="images/resources/couple1.jpg" alt=""></figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h5>"Its a a good place to meet serious people!"</h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<figure><img src="images/resources/couple2.jpg" alt=""></figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h5>"Wedding ceremony was priceless"</h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<figure><img src="images/resources/couple3.jpg" alt=""></figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<h5>"i am so happy, i find my love in this site and will marry soon! "</h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&lt;!&ndash; success couples carousel widget &ndash;&gt;&#45;&#45;}}-->
+<!--{{&#45;&#45;						</aside>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="col-lg-9">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="row">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="col-lg-12">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="Global Puls-filter central-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<ul class="view-port">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li class="active"><a href="#" title=""><i class="fa fa-th"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a href="#" title=""><i class="fa fa-th-list"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<ul class="filter-ajex">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li class="active"><a href="#" title="All Members">All</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a class="online" href="#" title="Only Online People"><i class="fa fa-circle"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a class="offline" href="#" title="Only Offline People"><i class="fa fa-circle"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a href="#" title="">Best Match</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a href="#" title="">Newest</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a href="#" title="">Approved</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a href="#" title="">Near By</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a href="#" title="">Paid Members</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;										<li><a href="#" title="">Free Members</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="range-slider">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="slider-box">&#45;&#45;}}-->
+<!--{{&#45;&#45;										  <label for="priceRange"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;										  <input type="text" id="priceRange" readonly>&#45;&#45;}}-->
+<!--{{&#45;&#45;										  <div id="price-range" class="slider"></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="load-more">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="central-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="row merged20 remove-ext">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user1.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Sophia | 22</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Canada</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user2.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>16k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Josef | 25</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Jordan</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user3.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-away"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>1k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">William | 25</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> UK</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user4.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>2.2k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Katrina | 24</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> UK</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user5.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>12k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Andrew | 27</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> UK</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user6.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>2k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Emily | 21</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Germany</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user7.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-away"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>2.3k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Sophia | 24</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Germany</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user8.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>1.1k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Sania | 24</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Poland</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user9.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>9k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Olivia | 23</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Canada</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user10.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>10k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Fawad Ahmed | 23</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> India</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user11.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>1.3k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Sadia | 25</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Turky</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user12.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>13k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Jhony | 20</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> UK</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user13.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-away"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>2.3k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Charlotte | 20</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Spain</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user14.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>3k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">JACOB | 21</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> France</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user15.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-offline"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>3.2k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">HARRY | 21</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> USA</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<div class="col-lg-3 col-md-4 col-sm-4 item">&#45;&#45;}}-->
+<!--{{&#45;&#45;										<div class="pitdate-user">&#45;&#45;}}-->
+<!--{{&#45;&#45;											<figure><img src="images/resources/date-user16.jpg" alt="">&#45;&#45;}}-->
+<!--{{&#45;&#45;												<span class="status f-online"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="likes heart" title="Like/Dislike">❤ <span>1.2k</span></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												<div class="more">&#45;&#45;}}-->
+<!--{{&#45;&#45;													<div class="more-post-optns"><i class="ti-more-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;														<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;															<li class="get-link"><i class="fa fa-link"></i>Copy Link</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;														</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;													</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;												</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;											</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<h4><a href="#" title="">Sapna | 25</a></h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<span><i class="fa fa-map-marker"></i> Inida</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;											<a href="#" title="Add Friend"><i class="fa fa-plus-circle"></i></a>&#45;&#45;}}-->
+<!--{{&#45;&#45;										</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;									</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</section>&lt;!&ndash; content &ndash;&gt;&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	<section>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="pit-ad-banner pinkish low-opacity">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="bg-image" style="background-image: url(images/resources/add-banner.jpg)"></div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="add-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<h5>Let everyone know that you are ready to marry them! <span>Send a heart bomb and contact 100+ members at once.</span></h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<i><img src="images/heart-bomb.png" alt=""></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<a href="#" title="" data-ripple="">Send Now</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</section>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	<div class="bottombar">&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="container">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="col-md-12">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<span class="copyright">© Global Puls 2021. All rights reserved.</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<i><img src="images/credit-cards.png" alt=""></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</div>&lt;!&ndash; bottombar&ndash;&gt;&#45;&#45;}}-->
+<!--{{&#45;&#45;</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	<div class="side-panel">&#45;&#45;}}-->
+<!--{{&#45;&#45;		<h4 class="panel-title">General Setting</h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<form method="post">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>use night mode</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="nightmode1"/>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="nightmode1" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Notifications</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch22" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch22" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Notification sound</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch33" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch33" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>My profile</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch44" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch44" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Show profile</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch55" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch55" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<h4 class="panel-title">Account Setting</h4>&#45;&#45;}}-->
+<!--{{&#45;&#45;		<form method="post">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Sub users</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch66" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch66" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>personal account</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch77" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch77" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Business account</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch88" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch88" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Show me online</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch99" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch99" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Delete history</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch101" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch101" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="setting-row">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<span>Expose author name</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<input type="checkbox" id="switch111" />&#45;&#45;}}-->
+<!--{{&#45;&#45;				<label for="switch111" data-on-label="ON" data-off-label="OFF"></label>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</div>&lt;!&ndash; side panel &ndash;&gt;&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	<div class="popup-wraper2">&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="popup post-sharing">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<span class="popup-closed"><i class="ti-close"></i></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="popup-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="popup-head">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<select data-placeholder="Share to friends..." multiple class="chosen-select multi">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<option>Share in your feed</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<option>Share in friend feed</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<option>Share in a page</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<option>Share in a group</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<option>Share in message</option>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</select>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="post-status">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span><i class="fa fa-globe"></i></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-globe"></i> Post Globaly</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-user"></i> Post Private</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title=""><i class="fa fa-user-plus"></i> Post Friends</a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="postbox">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="post-comt-box">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<form method="post">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<input type="text" placeholder="Search Friends, Pages, Groups, etc....">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<textarea placeholder="Say something about this..."></textarea>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="add-smiles">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span title="add icon" class="em em-expressionless"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<div class="smiles-bunch">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-&#45;&#45;1"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-smiley"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-anguished"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-laughing"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-angry"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-astonished"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-blush"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-disappointed"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-worried"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-kissing_heart"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-rage"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="em em-stuck_out_tongue"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</div>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;							<button type="submit"></button>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<figure><img src="images/resources/share-post.jpg" alt=""></figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="friend-info">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<img alt="" src="images/resources/admin.jpg">&#45;&#45;}}-->
+<!--{{&#45;&#45;						</figure>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="friend-name">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<ins><a title="" href="#">Jack Carter</a> share <a title="" href="#">link</a></ins>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<span>Yesterday with @Jack Piller and @Emily Stone at the concert of # Rock'n'Rolla in Ontario.</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="share-to-other">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span>Share to other socials</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a class="facebook-color" href="#" title=""><i class="fa fa-facebook-square"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a class="twitter-color" href="#" title=""><i class="fa fa-twitter-square"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a class="dribble-color" href="#" title=""><i class="fa fa-dribbble"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a class="instagram-color" href="#" title=""><i class="fa fa-instagram"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a class="pinterest-color" href="#" title=""><i class="fa fa-pinterest-square"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="copy-email">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span>Copy & Email</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title="Copy Post Link"><i class="fa fa-link"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li><a href="#" title="Email this Post"><i class="fa fa-envelope"></i></a></li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="we-video-info">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span title="" data-toggle="tooltip" class="views" data-original-title="views">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="fa fa-eye"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<ins>1.2k</ins>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<li>&#45;&#45;}}-->
+<!--{{&#45;&#45;								<span title="" data-toggle="tooltip" class="views" data-original-title="shares">&#45;&#45;}}-->
+<!--{{&#45;&#45;									<i class="fa fa-share-alt"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;									<ins>20k</ins>&#45;&#45;}}-->
+<!--{{&#45;&#45;								</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;							</li>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</ul>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<button class="main-btn color" data-ripple="">Submit</button>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<button class="main-btn cancel" data-ripple="">Cancel</button>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</div>&lt;!&ndash; share popup &ndash;&gt;&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	<div class="popup-wraper3">&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="popup">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<span class="popup-closed"><i class="ti-close"></i></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="popup-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="popup-head">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<h5>Report Post</h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="Rpt-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<span>We're sorry something's wrong. How can we help?</span>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<form method="post" class="c-form">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="form-radio">&#45;&#45;}}-->
+<!--{{&#45;&#45;						  <div class="radio">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<label>&#45;&#45;}}-->
+<!--{{&#45;&#45;							  <input type="radio" name="radio" checked="checked"><i class="check-box"></i>It's spam or abuse&#45;&#45;}}-->
+<!--{{&#45;&#45;							</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;						  </div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						  <div class="radio">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<label>&#45;&#45;}}-->
+<!--{{&#45;&#45;							  <input type="radio" name="radio"><i class="check-box"></i>It breaks r/technology's rules&#45;&#45;}}-->
+<!--{{&#45;&#45;							</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;						  </div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="radio">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<label>&#45;&#45;}}-->
+<!--{{&#45;&#45;							  <input type="radio" name="radio"><i class="check-box"></i>Not Related&#45;&#45;}}-->
+<!--{{&#45;&#45;							</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;						  </div>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<div class="radio">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<label>&#45;&#45;}}-->
+<!--{{&#45;&#45;							  <input type="radio" name="radio"><i class="check-box"></i>Other issues&#45;&#45;}}-->
+<!--{{&#45;&#45;							</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;						  </div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<label>Write about Report</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<textarea placeholder="write someting about Post" rows="2"></textarea>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<button data-ripple="" type="submit" class="main-btn">Submit</button>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<a href="#" data-ripple="" class="main-btn3 cancel">Close</a>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</div>&lt;!&ndash; report popup &ndash;&gt;&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	<div class="popup-wraper1">&#45;&#45;}}-->
+<!--{{&#45;&#45;		<div class="popup direct-mesg">&#45;&#45;}}-->
+<!--{{&#45;&#45;			<span class="popup-closed"><i class="ti-close"></i></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;			<div class="popup-meta">&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="popup-head">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<h5>Send Message</h5>&#45;&#45;}}-->
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;				<div class="send-message">&#45;&#45;}}-->
+<!--{{&#45;&#45;					<form method="post" class="c-form">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<input type="text" placeholder="Sophia">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<textarea placeholder="Write Message"></textarea>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<button type="submit" class="main-btn">Send</button>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</form>&#45;&#45;}}-->
+<!--{{&#45;&#45;					<div class="add-smiles">&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="uploadimage">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="fa fa-image"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<label class="fileContainer">&#45;&#45;}}-->
+<!--{{&#45;&#45;								<input type="file">&#45;&#45;}}-->
+<!--{{&#45;&#45;							</label>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<span title="add icon" class="em em-expressionless"></span>&#45;&#45;}}-->
+<!--{{&#45;&#45;						<div class="smiles-bunch">&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-&#45;&#45;1"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-smiley"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-anguished"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-laughing"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-angry"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-astonished"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-blush"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-disappointed"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-worried"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-kissing_heart"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-rage"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;							<i class="em em-stuck_out_tongue"></i>&#45;&#45;}}-->
+<!--{{&#45;&#45;						</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;					</div>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;				</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;			</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;		</div>&#45;&#45;}}-->
+<!--{{&#45;&#45;	</div>&lt;!&ndash; send message popup &ndash;&gt;&#45;&#45;}}-->
+
+
+
+
+
+<!--{{&#45;&#45;	<script src="{{asset('public/frontend/assets/js/main.min.js')}}"></script>&#45;&#45;}}-->
+<!--{{&#45;&#45;	<script src="{{asset('public/frontend/assets/js/script.js')}}"></script>&#45;&#45;}}-->
+
+<!--{{&#45;&#45;<script>&#45;&#45;}}-->
+<!--{{&#45;&#45;	$(window).load(function(){&#45;&#45;}}-->
+
+<!--{{&#45;&#45;		$('#myModal').modal('show');&#45;&#45;}}-->
+<!--{{&#45;&#45;		//Initialize tooltips&#45;&#45;}}-->
+
+<!--{{&#45;&#45;	});&#45;&#45;}}-->
+<!--{{&#45;&#45;	$(function () {&#45;&#45;}}-->
+<!--{{&#45;&#45;		$('#modalToggle').click(function() {&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('#modal').modal({&#45;&#45;}}-->
+<!--{{&#45;&#45;				backdrop: 'static'&#45;&#45;}}-->
+<!--{{&#45;&#45;			});&#45;&#45;}}-->
+<!--{{&#45;&#45;		});&#45;&#45;}}-->
+
+<!--{{&#45;&#45;		$('#infoContinue').click(function (e) {&#45;&#45;}}-->
+<!--{{&#45;&#45;			e.preventDefault();&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').css('width', '40%');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').html('Step 2 of 5');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('#myTab a[href="#ads"]').tab('show');&#45;&#45;}}-->
+<!--{{&#45;&#45;		});&#45;&#45;}}-->
+
+<!--{{&#45;&#45;		$('#adsContinue').click(function (e) {&#45;&#45;}}-->
+<!--{{&#45;&#45;			e.preventDefault();&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').css('width', '60%');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').html('Step 3 of 5');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('#myTab a[href="#placementPanel"]').tab('show');&#45;&#45;}}-->
+<!--{{&#45;&#45;		});&#45;&#45;}}-->
+
+<!--{{&#45;&#45;		$('#placementContinue').click(function (e) {&#45;&#45;}}-->
+<!--{{&#45;&#45;			e.preventDefault();&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').css('width', '80%');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').html('Step 4 of 5');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('#myTab a[href="#schedulePanel"]').tab('show');&#45;&#45;}}-->
+<!--{{&#45;&#45;		});&#45;&#45;}}-->
+
+<!--{{&#45;&#45;		$('#scheduleContinue').click(function (e) {&#45;&#45;}}-->
+<!--{{&#45;&#45;			e.preventDefault();&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').css('width', '100%');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('.progress-bar').html('Step 5 of 5');&#45;&#45;}}-->
+<!--{{&#45;&#45;			$('#myTab a[href="#reviewPanel"]').tab('show');&#45;&#45;}}-->
+<!--{{&#45;&#45;		});&#45;&#45;}}-->
+
+<!--{{&#45;&#45;		$('#activate').click(function (e) {&#45;&#45;}}-->
+<!--{{&#45;&#45;			e.preventDefault();&#45;&#45;}}-->
+<!--{{&#45;&#45;			var formData = {&#45;&#45;}}-->
+<!--{{&#45;&#45;				campaign_name: $('#campaignName').val(),&#45;&#45;}}-->
+<!--{{&#45;&#45;				start_date: $('#start-date').val(),&#45;&#45;}}-->
+<!--{{&#45;&#45;				end_date: $('#end-date').val(),&#45;&#45;}}-->
+<!--{{&#45;&#45;				days: {&#45;&#45;}}-->
+<!--{{&#45;&#45;					sunday: $('#sunday').prop('checked'),&#45;&#45;}}-->
+<!--{{&#45;&#45;					monday: $('#monday').prop('checked'),&#45;&#45;}}-->
+<!--{{&#45;&#45;					tuesday: $('#tuesday').prop('checked'),&#45;&#45;}}-->
+<!--{{&#45;&#45;					wednesday: $('#wednesday').prop('checked'),&#45;&#45;}}-->
+<!--{{&#45;&#45;					thurday: $('#thursday').prop('checked'),&#45;&#45;}}-->
+<!--{{&#45;&#45;					friday: $('#friday').prop('checked'),&#45;&#45;}}-->
+<!--{{&#45;&#45;					saturday: $('#saturday').prop('checked'),&#45;&#45;}}-->
+<!--{{&#45;&#45;				},&#45;&#45;}}-->
+<!--{{&#45;&#45;				start_time: $('#start-time').val(),&#45;&#45;}}-->
+<!--{{&#45;&#45;				end_time: $('#end-time').val()&#45;&#45;}}-->
+<!--{{&#45;&#45;			}&#45;&#45;}}-->
+<!--{{&#45;&#45;			alert(JSON.stringify(formData));&#45;&#45;}}-->
+<!--{{&#45;&#45;		})&#45;&#45;}}-->
+<!--{{&#45;&#45;	})&#45;&#45;}}-->
+
+
+<!--{{&#45;&#45;</script>&#45;&#45;}}-->
+<!--{{&#45;&#45;    @endsection&#45;&#45;}}-->
+
