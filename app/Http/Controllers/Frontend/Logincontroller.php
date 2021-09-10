@@ -17,8 +17,6 @@ class Logincontroller extends Controller
 {
     public function index(){
         try {
-
-
             return view('frontend.loginpage.login');
         } catch (\Exception $e) {
             return view('frontend..errors.error', ['code' => $e->getCode() == 0 ? '000' : $e->getCode(), 'message' => $e->getMessage()]);

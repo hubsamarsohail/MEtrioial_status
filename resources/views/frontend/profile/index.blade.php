@@ -507,7 +507,6 @@
                     </ul>
                 </div>
             </div>
-{{--            <span class="ti-settings main-menu" data-ripple=""></span>--}}
         </div>
 
     </div><!-- topbar -->

@@ -118,7 +118,7 @@ Route::post('user-login/create', [Logincontroller::class, 'create'])->name('user
 Route::get('user-logout', [Logincontroller::class, 'logout'])->name('uLogout');
 
 Route::middleware(['verify.Usession'])->group(function () {
-    //user profile
+
 
     Route::any('user/password', [Logincontroller::class, 'changePassword'])->name('change.password');
 

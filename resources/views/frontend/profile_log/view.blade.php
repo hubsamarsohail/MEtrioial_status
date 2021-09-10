@@ -944,34 +944,26 @@
                             </div>
                         </div>
 
-
+{{--                    {{ dd($profile_logs) }}--}}
                         @foreach($profile_logs as $profile_log)
+{{--                            {{ dd($profile_log->profile_logs[0]->nationality) }}--}}
                             <div class="load-more">
                                 <div class="central-meta item" style="background: white">
                                     <div class="pit-post">
-                                        <figure>@if($profile_log->profile_user_logs)
-                                                <img style="height:150px; width: 200px" src="{{asset('public/uploads/profile').'/'.$profile_log->user_profile_data->email.'/'.$profile_log->user_profile_data->image_path }} " alt="">
-                                            @endif
-                                        </figure>
+
                                         <div class="pit-post-deta">
-                                            @if($profile_log->profile_user_logs)
-                                                <h4><a href="{{route('udetails',Hashids::encode($profile_log->user_profile_data->user_profile_id))}}" title=""><span class="status f-online"></span> @if($profile_log->profile_user_logs){{$profile_log->profile_user_logs[0]->first_name}} @endif | {{$profile_log->user_profile_data->age}}</a></h4>
-                                            @endif
+
                                             <ul class="post-up-time">
                                                 <li>
                                                     <div class="verification">
                                                         <em class="verify"><i class="fa fa-check-circle"></i> verified</em>
                                                     </div>
                                                 </li>
-                                                @if($profile_log->profile_user_logs)
-                                                    <li><i class="fa fa-map-marker"></i> {{$profile_log->user_profile_data->nationality}}</li>
-                                                @endif
+
                                             </ul>
 
                                             <ul class="pit-opt">
-                                                <li>
-                                                    <div class="likes heart" title="Cast"> <span>{{$profile_log->user_profile_data->cast}}</span></div>
-                                                </li>
+
 
                                             </ul>
                                         </div>

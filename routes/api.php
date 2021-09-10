@@ -19,23 +19,42 @@ use App\Http\Controllers\API\ParentController;
 
 
 Route::post('user-register', [RegisterController::class, 'create']);
-Route::post('login', [LoginController::class, 'create'])->name('login');;
+Route::post('login', [LoginController::class, 'create'])->name('login');
 
-Route::group(['middleware' => 'auth:api'], function(){
+//Route::group(['prefix' => 'auth'], function () {
+//    Route::post('login', [LoginController::class, 'create'])->name('login');
+//
+////    Route::post('signup', 'AuthController@signup');
+//
+//    Route::group(['middleware' => 'auth:api'], function() {
+//        Route::get('country/view', [ProfileController::class, 'ViewCountry']);
+//
+//        Route::get('logout', 'AuthController@logout');
+//        Route::get('user', 'AuthController@user');
+//    });
+//});
 
+
+
+//Route::middleware('auth:api')->group(function () {
 Route::post('user/profile/create', [ProfileController::class, 'create']);
 Route::get('country/view', [ProfileController::class, 'ViewCountry']);
 Route::any('city/view', [ProfileController::class, 'ViewCity']);
 Route::any('matcher/view', [ProfileController::class, 'ViewMatcher']);
-Route::any('agent/view', [AgentController::class, 'ViewAgent']);
 Route::any('user/search/data', [ProfileController::class, 'searchUserdata']);
 
+Route::any('advance/search/data', [ProfileController::class, 'searchAdvancedata']);
+
 Route::post('agent/profile/create', [AgentController::class, 'create']);
+Route::any('agent/view', [AgentController::class, 'ViewAgent']);
+Route::any('agent/search/data', [AgentController::class, 'searchAgentdata']);
 
-Route::post('parentprofile/create', [ParentController::class, 'index']);
-Route::post('parentprofile/request', [ParentController::class, 'create']);
 
-});
+
+Route::post('parent/profile/create', [ParentController::class, 'index']);
+Route::post('parent/profile/request', [ParentController::class, 'create']);
+
+//});
 
 
 

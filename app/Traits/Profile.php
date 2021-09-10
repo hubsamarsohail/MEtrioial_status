@@ -217,10 +217,13 @@ trait Profile
             })->get();
         foreach ($userProfile as $userdata) {
             $web_user_id = session()->get('user_web_data')['user_info']['web_user_id'];
-            $userdata->my_favourite = MyFavourite::where(function ($q) use ($userdata, $web_user_id) {
-                if ($userdata->user_profile_id) $q->where('user_profile_id', $userdata->user_profile_id);
-                if ($web_user_id) $q->where('web_user_id', $web_user_id);
-            })->get();
+            $userdata->my_favourite = MyFavourite::where('web_user_id', $web_user_id)->where('user_profile_id', $userdata->user_profile_id)->get();
+            if ($userdata->user_profile_id){
+                $fav = MyFavourite::where('user_profile_id', $userdata->user_profile_id)->get()->count();
+            } else {
+                $fav = MyFavourite::where('web_user_id', $web_user_id)->get()->count();
+            }
+            $userdata['fav_count'] = $fav;
         }
         return $userProfile;
     }
@@ -246,16 +249,16 @@ trait Profile
                 $q->where('gender', '!=', $webUser['gender']);
             })->where(function ($query) use ($request, $height, $webUser) {
                 if ( $webUser['web_user_id']) $query->where('web_user_id', '!=', $webUser['web_user_id']);
-                if ($request->cast) $query->orWhere('cast', 'LIKE', '%' . $request->cast . '%');
-                if ($request->mother_lang) $query->orWhere('mother_lang', 'LIKE', '%' . $request->mother_lang . '%');
-                if ($height) $query->orWhere('height', 'LIKE', '%' . $height . '%');
-                if ($request->marital_status) $query->orWhere('marital_status', 'LIKE', '%' . $request->marital_status . '%');
-                if ($request->religion) $query->orWhere('religion', 'LIKE', '%' . $request->religion . '%');
-                if ($request->ethnicity) $query->orWhere('ethnicity', 'LIKE', '%' . $request->ethnicity . '%');
-                if ($request->body_shape) $query->orWhere('body_shape', 'LIKE', '%' . $request->body_shape . '%');
-                if ($request->drink_status) $query->orWhere('drink_status', 'LIKE', '%' . $request->drink_status . '%');
-                if ($request->smoke_status) $query->orWhere('smoke_status', 'LIKE', '%' . $request->smoke_status . '%');
-                if ($request->types) $query->orWhere('types', 'LIKE', '%' . $request->types . '%');
+                if ($request->cast) $query->Where('cast', $request->cast );
+                if ($request->mother_lang) $query->Where('mother_lang', $request->mother_lang );
+                if ($height) $query->Where('height', $height );
+                if ($request->marital_status) $query->Where('marital_status',  $request->marital_status);
+                if ($request->religion) $query->Where('religion',  $request->religion );
+                if ($request->ethnicity) $query->Where('ethnicity',  $request->ethnicity);
+                if ($request->body_shape) $query->Where('body_shape',  $request->body_shape);
+                if ($request->drink_status) $query->Where('drink_status', $request->drink_status);
+                if ($request->smoke_status) $query->Where('smoke_status',  $request->smoke_status );
+                if ($request->types) $query->Where('types' , $request->types );
             })->get();
         return $userProfile;
     }
@@ -391,23 +394,12 @@ trait Profile
 
     public static function ProfileLogTotal()
     {
-        $web_user_id = session()->get('user_web_data')['user_info']['web_user_id'];
 
-        $profile_log_total = Profile_log::with('profile_logs', 'profile_user_logs')
-            ->whereHas('profile_logs', function (Builder $query) use ($web_user_id) {
-                $query->where('web_user_id', 'like', $web_user_id);
-            })->distinct('web_user_id')->get();
-        foreach ($profile_log_total as $profile_log) {
-            if (isset($profile_log->profile_user_logs[0])) {
-                $profile_log->user_profile_data = UProfile::
-                where(function ($query) use ($profile_log) {
-                    $query->where('web_user_id', $profile_log->profile_user_logs[0]->web_user_id);
-                    $query->where('types', '1');
-                })
-                    ->orderBy('user_profile_id', 'desc')
-                    ->limit(1)->first();
-            }
-        }
+        $web_user_id = session()->get('user_web_data')['user_info']['web_user_id'];
+        $profile_log_total = Profile_log::with(['profile_logs', 'profile_user_logs'])
+            ->where('web_user_id', $web_user_id)
+            ->groupBy('user_profile_id')
+            ->get();
 
         return $profile_log_total;
     }
@@ -426,16 +418,17 @@ trait Profile
     }
     public static function searchData($request)
     {
-        $userProfile = UProfile::with(['Country', 'users'])
-            ->whereHas('users', function (Builder $query) use ($request) {
-                $query->orWhere('first_name', 'LIKE', '%' . $request->value . '%');
-                $query->orWhere('last_name', 'LIKE', '%' . $request->value . '%');
+        $userProfile = UProfile::with('users')
+            ->whereHas('users', function ($query) use ($request){
+                $query->where('first_name', 'LIKE', '%' . $request->value . '%')
+                    ->orWhere('last_name', 'LIKE', '%' . $request->value . '%');
             })
-            ->orWhere(function ($query) use ($request) {
-                if ($request->value ?? '') $query->orWhere('cast', 'LIKE', '%' . $request->value . '%');
-                if ($request->value  ?? '') $query->orWhere('nationality', 'LIKE', '%' . $request->value . '%');
-                if ($request->type ?? '')  $query->orwhere('types', 'LIKE', '%' . $request->type . '%');
-           })->get();
+            ->orWhere('nationality', 'LIKE', '%' . $request->value . '%')
+            ->orWhere('cast', 'LIKE', '%' . $request->value . '%');
+            if($request->type != ''){
+                $userProfile->where('types', '=', $request->type);
+            }
+        $userProfile = $userProfile->get();
 
         return $userProfile;
     }

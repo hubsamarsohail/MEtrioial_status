@@ -320,9 +320,12 @@
                     <h3 style="color: white;">Pages</h3>
                     <div>
                         <ul style="color: white;padding-top: 23px;">
+
+                            @if(isset($pages))
                             @foreach($pages as $page)
                                <li><i style="font-size:16px" class="fa">&#xf105;</i> &nbsp;&nbsp;<a href="{{route('PagesDetail',Hashids::encode($page->page_id))}}">{{ $page->title  }}</a></li>
                             @endforeach
+                                @endif
                         </ul>
 
                     </div>

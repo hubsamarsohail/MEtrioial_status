@@ -15,11 +15,11 @@
                                 <span class="status f-online"></span>
 
                                 @if(isset($profile->my_favourite[0]))
-                                    <div class="likes heart"  title="Remove Favourite" onclick="removefavourite({{$profile->user_profile_id}})" style="color: darkred; font-size: 30px; bottom: 22px;">❤<span></span></div>
-
+                                    <div class="likes heart"  title="Remove Favourite" onclick="removefavourite({{$profile->user_profile_id}})" style="color: darkred; font-size: 30px; bottom: 22px;">❤<span style="margin: 8px"  >{{ $profile->fav_count }}</span></div>
                                 @else
-                                    <div class="likes heart" title="Add Favourite" onclick="addfavourite({{$profile->user_profile_id}})" style="font-size: 30px; bottom: 22px;" >❤<span></span></div>
+                                    <div class="likes heart" title="Add Favourite" onclick="addfavourite({{$profile->user_profile_id}})" style="font-size: 30px; bottom: 22px;" >❤<span style="margin: 8px" >{{ $profile->fav_count }}</span></div>
                                 @endif
+
                                 <div class="more">
                                     <div class="more-post-optns"><i class="ti-more-alt"></i>
                                         <ul>
