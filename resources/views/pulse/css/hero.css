@@ -1,0 +1,1234 @@
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+    opacity: 1;
+}
+
+.field--wrapper {
+    position:relative;
+    margin-bottom:20px;
+}
+label {
+    position:absolute;
+    top:-13px;
+    left:0;
+    font-size:11px;
+    color:#aaa;
+    transition: all 0.1s linear;
+    opacity:0;
+    font-weight:bold;
+}
+label.on {
+    color:#4481C4;
+}
+label.show {
+    top:-15px;
+    opacity:1;
+}
+
+
+
+
+/*form*/
+@media (min-width: 992px) {
+    .main-banner.image-banner, .hero-header, .hero-banner {
+        min-height: 660px;
+    }
+
+    @media (min-width: 992px)
+        .hero-banner {
+            min-height: 580px;
+        }
+
+        .hero-banner {
+            padding: 8em 0 2em 0;
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-cover {
+            background-size: cover !important;
+            background-position: center !important;
+        }
+
+        .hero-banner > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (min-width: 1200px)
+            .container, .container-lg, .container-md, .container-sm, .container-xl {
+                max-width: 1140px;
+            }
+
+            @media (min-width: 992px)
+                .container, .container-lg, .container-md, .container-sm {
+                    max-width: 960px;
+                }
+
+                @media (min-width: 768px)
+                    .container, .container-md, .container-sm {
+                        max-width: 720px;
+                    }
+
+                    @media (min-width: 576px)
+                        .container, .container-sm {
+                            max-width: 540px;
+                        }
+
+                        .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+                            width: 100%;
+                            padding-right: var(--bs-gutter-x, .75rem);
+                            padding-left: var(--bs-gutter-x, .75rem);
+                            margin-right: auto;
+                            margin-left: auto;
+                        }
+
+                        .hero-search-wrap {
+                            position: relative;
+                            background: #fff;
+                            max-width: 540px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            padding: 30px 40px 40px;
+                            box-shadow: 0 20px 30px rgb(0 22 84 / 15%);
+                        }
+
+                        .red-skin .hero-search h1, .green-skin .hero-search h1, .blue-skin .hero-search h1, .yellow-skin .hero-search h1, .darkblue-skin .hero-search h1, .oceangreen-skin .hero-search h1, .purple-skin .hero-search h1, .goodred-skin .hero-search h1, .goodgreen-skin .hero-search h1, .blue2-skin .hero-search h1 {
+                            color: #2D3954 !important;
+                        }
+
+                        @media (min-width: 992px)
+                            .hero-search h1 {
+                                font-size: 40px;
+                            }
+
+                            .hero-banner h1 {
+                                font-weight: 800;
+                                line-height: 1.3;
+                            }
+
+                            .hero-search h1 {
+                                text-transform: capitalize;
+                                /*color: #2b4db9!important;*/
+                                font-size: 35px;
+                            }
+
+                            @media (min-width: 992px)
+                            h1, .h1 {
+                                font-size: 4.142em;
+                                line-height: 1.31818182em;
+                            }
+
+                                h1 {
+                                    line-height: 40px;
+                                    font-size: 36px;
+                                }
+
+                                h1, h2, h3, h4, h5, h6 {
+                                    color: #2D3954;
+                                    font-weight: 700;
+                                    text-transform: capitalize;
+                                    font-family: 'Jost', sans-serif;
+                                }
+
+                                @media (min-width: 1200px)
+                                    .h1, h1 {
+                                        font-size: 2.5rem;
+                                    }
+
+                                    .h1, h1 {
+                                        font-size: calc(1.375rem + 1.5vw);
+                                    }
+
+                                    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+                                        margin-top: 0;
+                                        margin-bottom: .5rem;
+                                        font-weight: 500;
+                                        line-height: 1.2;
+                                    }
+
+
+                                    .row {
+                                        --bs-gutter-x: 1.5rem;
+                                        --bs-gutter-y: 0;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        margin-top: calc(var(--bs-gutter-y) * -1);
+                                        margin-right: calc(var(--bs-gutter-x) / -2);
+                                        margin-left: calc(var(--bs-gutter-x) / -2);
+                                    }
+
+
+                                    @media (min-width: 992px)
+                                        .col-lg-12 {
+                                            flex: 0 0 auto;
+                                            width: 100%;
+                                        }
+
+                                        @media (min-width: 768px)
+                                            .col-md-12 {
+                                                flex: 0 0 auto;
+                                                width: 100%;
+                                            }
+
+                                            @media (min-width: 576px)
+                                                .col-sm-12 {
+                                                    flex: 0 0 auto;
+                                                    width: 100%;
+                                                }
+
+                                                .row > * {
+                                                    flex-shrink: 0;
+                                                    width: 100%;
+                                                    max-width: 100%;
+                                                    padding-right: calc(var(--bs-gutter-x) / 2);
+                                                    padding-left: calc(var(--bs-gutter-x) / 2);
+                                                    margin-top: var(--bs-gutter-y);
+                                                }
+
+
+                                                .form-group {
+                                                    margin-bottom: 15px;
+                                                }
+
+                                                .input-with-icon {
+                                                    position: relative;
+                                                    width: 100%;
+                                                }
+
+                                                .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                    background: #edf1fb !important;
+                                                    box-shadow: none !important;
+                                                }
+
+                                                .input-with-icon .form-control, .input-with-shadow .form-control, .input-with-shadow .select2-container, .input-with-icon .select2-container {
+                                                    border: none;
+                                                    border-radius: 5px;
+                                                    padding-left: 45px;
+                                                    height: 60px;
+                                                    background: #fff;
+                                                    overflow: hidden;
+                                                    box-shadow: 0 0 6px 1px rgb(62 28 131 / 10%);
+                                                    -webkit-box-shadow: 0 0 6px 1px rgb(62 28 131 / 10%);
+                                                }
+
+                                                .form-control {
+                                                    height: 56px;
+                                                    font-size: 16px;
+                                                    box-shadow: none;
+                                                    padding: .5rem .75rem;
+                                                    border: 1px solid #e0ecf5;
+                                                    background-clip: initial;
+                                                }
+
+                                                .form-control {
+                                                    display: block;
+                                                    width: 100%;
+                                                    padding: .375rem .75rem;
+                                                    font-size: 1rem;
+                                                    font-weight: 400;
+                                                    line-height: 1.5;
+                                                    color: #212529;
+                                                    background-color: #fff;
+                                                    background-clip: padding-box;
+                                                    border: 1px solid #ced4da;
+                                                    -webkit-appearance: none;
+                                                    -moz-appearance: none;
+                                                    appearance: none;
+                                                    border-radius: .25rem;
+                                                    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                }
+
+                                                button, input, optgroup, select, textarea {
+                                                    margin: 0;
+                                                    font-family: inherit;
+                                                    font-size: inherit;
+                                                    line-height: inherit;
+                                                }
+
+                                                .input-with-icon img {
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    left: 15px;
+                                                    cursor: normal;
+                                                }
+
+                                                img, svg {
+                                                    vertical-align: middle;
+                                                }
+
+                                                @media (min-width: 992px)
+                                                    .col-lg-6 {
+                                                        flex: 0 0 auto;
+                                                        width: 50%;
+                                                    }
+
+                                                    @media (min-width: 768px)
+                                                        .col-md-6 {
+                                                            flex: 0 0 auto;
+                                                            width: 50%;
+                                                        }
+
+                                                        @media (min-width: 576px)
+                                                            .col-sm-6 {
+                                                                flex: 0 0 auto;
+                                                                width: 50%;
+                                                            }
+
+                                                            .row > * {
+                                                                flex-shrink: 0;
+                                                                width: 100%;
+                                                                max-width: 100%;
+                                                                padding-right: calc(var(--bs-gutter-x) / 2);
+                                                                padding-left: calc(var(--bs-gutter-x) / 2);
+                                                                margin-top: var(--bs-gutter-y);
+                                                            }
+
+                                                            .hero-search-content.side-form label, label {
+                                                                font-size: 14px;
+                                                                font-weight: 600;
+                                                                color: #455892;
+                                                                font-family: 'Jost', sans-serif;
+                                                            }
+
+                                                            label {
+                                                                display: inline-block;
+                                                            }
+
+                                                            select.form-control:not([size]):not([multiple]) {
+                                                                height: 56px;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .form-control {
+                                                                height: 56px;
+                                                                font-size: 16px;
+                                                                box-shadow: none;
+                                                                padding: .5rem .75rem;
+                                                                border: 1px solid #e0ecf5;
+                                                                background-clip: initial;
+                                                            }
+
+                                                            .select2-hidden-accessible {
+                                                                border: 0 !important;
+                                                                clip: rect(0 0 0 0) !important;
+                                                                -webkit-clip-path: inset(50%) !important;
+                                                                clip-path: inset(50%) !important;
+                                                                height: 1px !important;
+                                                                overflow: hidden !important;
+                                                                padding: 0 !important;
+                                                                position: absolute !important;
+                                                                width: 1px !important;
+                                                                white-space: nowrap !important;
+                                                            }
+
+                                                            .form-control {
+                                                                display: block;
+                                                                width: 100%;
+                                                                padding: .375rem .75rem;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                line-height: 1.5;
+                                                                color: #212529;
+                                                                background-color: #fff;
+                                                                background-clip: padding-box;
+                                                                border: 1px solid #ced4da;
+                                                                -webkit-appearance: none;
+                                                                -moz-appearance: none;
+                                                                appearance: none;
+                                                                border-radius: .25rem;
+                                                                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                            }
+
+                                                            select {
+                                                                word-wrap: normal;
+                                                            }
+
+                                                            button, select {
+                                                                text-transform: none;
+                                                            }
+
+                                                            button, input, optgroup, select, textarea {
+                                                                margin: 0;
+                                                                font-family: inherit;
+                                                                font-size: inherit;
+                                                                line-height: inherit;
+                                                            }
+
+                                                            .select2-container {
+                                                                width: 100% !important;
+                                                            }
+
+                                                            .select2-container {
+                                                                box-sizing: border-box;
+                                                                display: inline-block;
+                                                                margin: 0;
+                                                                position: relative;
+                                                                vertical-align: middle;
+                                                            }
+
+
+                                                            .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                                border-radius: 5px;
+                                                                padding-left: 15px !important;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single {
+                                                                background-color: #fff;
+                                                                border-radius: 0;
+                                                                border: none;
+                                                                height: 57px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single {
+                                                                background-color: #fff;
+                                                                border: 1px solid #aaa;
+                                                                border-radius: 4px;
+                                                            }
+
+                                                            .select2-container .select2-selection--single {
+                                                                box-sizing: border-box;
+                                                                cursor: pointer;
+                                                                display: block;
+                                                                height: 28px;
+                                                                user-select: none;
+                                                                -webkit-user-select: none;
+                                                            }
+
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                                                                color: #626a70;
+                                                                line-height: 57px;
+                                                                text-align: left;
+                                                                padding: 0 15px 0 0;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                                                                color: #444;
+                                                                line-height: 28px;
+                                                            }
+
+                                                            .select2-container .select2-selection--single .select2-selection__rendered {
+                                                                display: block;
+                                                                padding-left: 8px;
+                                                                padding-right: 20px;
+                                                                overflow: hidden;
+                                                                text-overflow: ellipsis;
+                                                                white-space: nowrap;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__placeholder {
+                                                                color: #6877a5;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__placeholder {
+                                                                color: #999;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                                                                height: 50px;
+                                                                position: absolute;
+                                                                top: 1px;
+                                                                right: 10px;
+                                                                width: 20px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                                                                height: 26px;
+                                                                position: absolute;
+                                                                top: 1px;
+                                                                right: 1px;
+                                                                width: 20px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow b {
+                                                                border-color: #888 transparent transparent transparent;
+                                                                border-style: solid;
+                                                                border-width: 5px 4px 0 4px;
+                                                                height: 0;
+                                                                left: 50%;
+                                                                margin-left: -4px;
+                                                                margin-top: -2px;
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                width: 0;
+                                                            }
+
+                                                            b, strong {
+                                                                font-weight: bolder;
+                                                            }
+
+                                                            select.form-control:not([size]):not([multiple]) {
+                                                                height: 56px;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .form-control {
+                                                                height: 56px;
+                                                                font-size: 16px;
+                                                                box-shadow: none;
+                                                                padding: .5rem .75rem;
+                                                                border: 1px solid #e0ecf5;
+                                                                background-clip: initial;
+                                                            }
+
+                                                            .select2-hidden-accessible {
+                                                                border: 0 !important;
+                                                                clip: rect(0 0 0 0) !important;
+                                                                -webkit-clip-path: inset(50%) !important;
+                                                                clip-path: inset(50%) !important;
+                                                                height: 1px !important;
+                                                                overflow: hidden !important;
+                                                                padding: 0 !important;
+                                                                position: absolute !important;
+                                                                width: 1px !important;
+                                                                white-space: nowrap !important;
+                                                            }
+
+                                                            .form-control {
+                                                                display: block;
+                                                                width: 100%;
+                                                                padding: .375rem .75rem;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                line-height: 1.5;
+                                                                color: #212529;
+                                                                background-color: #fff;
+                                                                background-clip: padding-box;
+                                                                border: 1px solid #ced4da;
+                                                                -webkit-appearance: none;
+                                                                -moz-appearance: none;
+                                                                appearance: none;
+                                                                border-radius: .25rem;
+                                                                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                            }
+
+                                                            select {
+                                                                word-wrap: normal;
+                                                            }
+
+                                                            button, select {
+                                                                text-transform: none;
+                                                            }
+
+                                                            button, input, optgroup, select, textarea {
+                                                                margin: 0;
+                                                                font-family: inherit;
+                                                                font-size: inherit;
+                                                                line-height: inherit;
+                                                            }
+
+                                                            .select2-container {
+                                                                width: 100% !important;
+                                                            }
+
+                                                            .select2-container {
+                                                                box-sizing: border-box;
+                                                                display: inline-block;
+                                                                margin: 0;
+                                                                position: relative;
+                                                                vertical-align: middle;
+                                                            }
+
+                                                            .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                                border-radius: 5px;
+                                                                padding-left: 15px !important;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single {
+                                                                background-color: #fff;
+                                                                border-radius: 0;
+                                                                border: none;
+                                                                height: 57px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single {
+                                                                background-color: #fff;
+                                                                border: 1px solid #aaa;
+                                                                border-radius: 4px;
+                                                            }
+
+                                                            .select2-container .select2-selection--single {
+                                                                box-sizing: border-box;
+                                                                cursor: pointer;
+                                                                display: block;
+                                                                height: 28px;
+                                                                user-select: none;
+                                                                -webkit-user-select: none;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                                                                color: #626a70;
+                                                                line-height: 57px;
+                                                                text-align: left;
+                                                                padding: 0 15px 0 0;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                                                                color: #444;
+                                                                line-height: 28px;
+                                                            }
+
+                                                            .select2-container .select2-selection--single .select2-selection__rendered {
+                                                                display: block;
+                                                                padding-left: 8px;
+                                                                padding-right: 20px;
+                                                                overflow: hidden;
+                                                                text-overflow: ellipsis;
+                                                                white-space: nowrap;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__placeholder {
+                                                                color: #6877a5;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__placeholder {
+                                                                color: #999;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                                                                height: 50px;
+                                                                position: absolute;
+                                                                top: 1px;
+                                                                right: 10px;
+                                                                width: 20px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                                                                height: 26px;
+                                                                position: absolute;
+                                                                top: 1px;
+                                                                right: 1px;
+                                                                width: 20px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow b {
+                                                                border-color: #888 transparent transparent transparent;
+                                                                border-style: solid;
+                                                                border-width: 5px 4px 0 4px;
+                                                                height: 0;
+                                                                left: 50%;
+                                                                margin-left: -4px;
+                                                                margin-top: -2px;
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                width: 0;
+                                                            }
+
+                                                            b, strong {
+                                                                font-weight: bolder;
+                                                            }
+
+
+                                                            select.form-control:not([size]):not([multiple]) {
+                                                                height: 56px;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .form-control {
+                                                                height: 56px;
+                                                                font-size: 16px;
+                                                                box-shadow: none;
+                                                                padding: .5rem .75rem;
+                                                                border: 1px solid #e0ecf5;
+                                                                background-clip: initial;
+                                                            }
+
+                                                            .select2-hidden-accessible {
+                                                                border: 0 !important;
+                                                                clip: rect(0 0 0 0) !important;
+                                                                -webkit-clip-path: inset(50%) !important;
+                                                                clip-path: inset(50%) !important;
+                                                                height: 1px !important;
+                                                                overflow: hidden !important;
+                                                                padding: 0 !important;
+                                                                position: absolute !important;
+                                                                width: 1px !important;
+                                                                white-space: nowrap !important;
+                                                            }
+
+                                                            .form-control {
+                                                                display: block;
+                                                                width: 100%;
+                                                                padding: .375rem .75rem;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                line-height: 1.5;
+                                                                color: #212529;
+                                                                background-color: #fff;
+                                                                background-clip: padding-box;
+                                                                border: 1px solid #ced4da;
+                                                                -webkit-appearance: none;
+                                                                -moz-appearance: none;
+                                                                appearance: none;
+                                                                border-radius: .25rem;
+                                                                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                            }
+
+                                                            select {
+                                                                word-wrap: normal;
+                                                            }
+
+                                                            button, select {
+                                                                text-transform: none;
+                                                            }
+
+                                                            button, input, optgroup, select, textarea {
+                                                                margin: 0;
+                                                                font-family: inherit;
+                                                                font-size: inherit;
+                                                                line-height: inherit;
+                                                            }
+
+                                                            .select2-container {
+                                                                width: 100% !important;
+                                                            }
+
+                                                            .select2-container {
+                                                                box-sizing: border-box;
+                                                                display: inline-block;
+                                                                margin: 0;
+                                                                position: relative;
+                                                                vertical-align: middle;
+                                                            }
+
+                                                            .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                                border-radius: 5px;
+                                                                padding-left: 15px !important;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single {
+                                                                background-color: #fff;
+                                                                border-radius: 0;
+                                                                border: none;
+                                                                height: 57px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single {
+                                                                background-color: #fff;
+                                                                border: 1px solid #aaa;
+                                                                border-radius: 4px;
+                                                            }
+
+                                                            .select2-container .select2-selection--single {
+                                                                box-sizing: border-box;
+                                                                cursor: pointer;
+                                                                display: block;
+                                                                height: 28px;
+                                                                user-select: none;
+                                                                -webkit-user-select: none;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                                                                color: #626a70;
+                                                                line-height: 57px;
+                                                                text-align: left;
+                                                                padding: 0 15px 0 0;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                                                                color: #444;
+                                                                line-height: 28px;
+                                                            }
+
+                                                            .select2-container .select2-selection--single .select2-selection__rendered {
+                                                                display: block;
+                                                                padding-left: 8px;
+                                                                padding-right: 20px;
+                                                                overflow: hidden;
+                                                                text-overflow: ellipsis;
+                                                                white-space: nowrap;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__placeholder {
+                                                                color: #6877a5;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__placeholder {
+                                                                color: #999;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                                                                height: 50px;
+                                                                position: absolute;
+                                                                top: 1px;
+                                                                right: 10px;
+                                                                width: 20px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                                                                height: 26px;
+                                                                position: absolute;
+                                                                top: 1px;
+                                                                right: 1px;
+                                                                width: 20px;
+                                                            }
+
+                                                            .select2-container--default .select2-selection--single .select2-selection__arrow b {
+                                                                border-color: #888 transparent transparent transparent;
+                                                                border-style: solid;
+                                                                border-width: 5px 4px 0 4px;
+                                                                height: 0;
+                                                                left: 50%;
+                                                                margin-left: -4px;
+                                                                margin-top: -2px;
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                width: 0;
+                                                            }
+
+                                                            b, strong {
+                                                                font-weight: bolder;
+                                                            }
+
+                                                            select.form-control:not([size]):not([multiple]) {
+                                                                height: 56px;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .form-control {
+                                                                height: 56px;
+                                                                font-size: 16px;
+                                                                box-shadow: none;
+                                                                padding: .5rem .75rem;
+                                                                border: 1px solid #e0ecf5;
+                                                                background-clip: initial;
+                                                            }
+
+                                                            .select2-hidden-accessible {
+                                                                border: 0 !important;
+                                                                clip: rect(0 0 0 0) !important;
+                                                                -webkit-clip-path: inset(50%) !important;
+                                                                clip-path: inset(50%) !important;
+                                                                height: 1px !important;
+                                                                overflow: hidden !important;
+                                                                padding: 0 !important;
+                                                                position: absolute !important;
+                                                                width: 1px !important;
+                                                                white-space: nowrap !important;
+                                                            }
+
+                                                            .form-control {
+                                                                display: block;
+                                                                width: 100%;
+                                                                padding: .375rem .75rem;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                line-height: 1.5;
+                                                                color: #212529;
+                                                                background-color: #fff;
+                                                                background-clip: padding-box;
+                                                                border: 1px solid #ced4da;
+                                                                -webkit-appearance: none;
+                                                                -moz-appearance: none;
+                                                                appearance: none;
+                                                                border-radius: .25rem;
+                                                                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                            }
+
+                                                            select {
+                                                                word-wrap: normal;
+                                                            }
+
+                                                            button, select {
+                                                                text-transform: none;
+                                                            }
+
+                                                            button, input, optgroup, select, textarea {
+                                                                margin: 0;
+                                                                font-family: inherit;
+                                                                font-size: inherit;
+                                                                line-height: inherit;
+                                                            }
+
+                                                            .select2-container {
+                                                                width: 100% !important;
+                                                            }
+
+                                                            .select2-container {
+                                                                box-sizing: border-box;
+                                                                display: inline-block;
+                                                                margin: 0;
+                                                                position: relative;
+                                                                vertical-align: middle;
+                                                            }
+
+                                                            select.form-control:not([size]):not([multiple]) {
+                                                                height: 35px;
+                                                            }
+
+                                                            .hero-search-content.side-form .form-control, .hero-search-content.side-form .select2-container--default .select2-selection--single {
+                                                                background: #edf1fb !important;
+                                                                box-shadow: none !important;
+                                                            }
+
+                                                            .form-control {
+                                                                height: 56px;
+                                                                font-size: 16px;
+                                                                box-shadow: none;
+                                                                padding: .5rem .75rem;
+                                                                border: 1px solid #e0ecf5;
+                                                                background-clip: initial;
+                                                            }
+
+                                                            .select2-hidden-accessible {
+                                                                border: 0 !important;
+                                                                clip: rect(0 0 0 0) !important;
+                                                                -webkit-clip-path: inset(50%) !important;
+                                                                clip-path: inset(50%) !important;
+                                                                height: 1px !important;
+                                                                overflow: hidden !important;
+                                                                padding: 0 !important;
+                                                                position: absolute !important;
+                                                                width: 1px !important;
+                                                                white-space: nowrap !important;
+                                                            }
+
+                                                            .form-control {
+                                                                display: block;
+                                                                width: 100%;
+                                                                padding: .375rem .75rem;
+                                                                font-size: 1rem;
+                                                                font-weight: 400;
+                                                                line-height: 1.5;
+                                                                color: #212529;
+                                                                background-color: #fff;
+                                                                background-clip: padding-box;
+                                                                border: 1px solid #ced4da;
+                                                                -webkit-appearance: none;
+                                                                -moz-appearance: none;
+                                                                appearance: none;
+                                                                border-radius: .25rem;
+                                                                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                            }
+
+                                                            select {
+                                                                word-wrap: normal;
+                                                            }
+
+                                                            button, select {
+                                                                text-transform: none;
+                                                            }
+
+                                                            button, input, optgroup, select, textarea {
+                                                                margin: 0;
+                                                                font-family: inherit;
+                                                                font-size: inherit;
+                                                                line-height: inherit;
+                                                            }
+
+                                                            .select2-container {
+                                                                width: 100% !important;
+                                                            }
+
+                                                            .select2-container {
+                                                                box-sizing: border-box;
+                                                                display: inline-block;
+                                                                margin: 0;
+                                                                position: relative;
+                                                                vertical-align: middle;
+                                                            }
+
+                                                            .blue-skin .theme-bg, .blue-skin .property-search-type label:hover, .blue-skin .property-search-type label.active, .blue-skin li.login-attri.theme-log a, .blue-skin .range-slider .ui-slider .ui-slider-handle, .blue-skin .range-slider .ui-widget-header, .blue-skin .pricing-bottom .btn-pricing:hover, .blue-skin .pricing-bottom .btn-pricing:focus .blue-skin .select2-container--default .select2-results__option--highlighted[aria-selected], .blue-skin .pagination li:first-child a, .blue-skin .btn.btn-theme, .blue-skin .btn.btn-theme:hover, .blue-skin .btn.btn-theme:focus, .blue-skin .btn.search-btn, .blue-skin .btn-theme-2:hover, .blue-skin .btn-theme-2:focus, .blue-skin .btn-outline-theme:hover, .blue-skin .btn-outline-theme:focus, .blue-skin .btn.search-btn, .blue-skin .simple-search-wrap .pk-input-group .pk-subscribe-submit, .blue-skin .btn.search-btn-outline:hover, .blue-skin .btn.search-btn-outline:focus, .blue-skin .property-listing.property-1 .listing-detail-btn .more-btn, .blue-skin .home-slider-desc .read-more, .blue-skin .nav-tabs .nav-item.show .nav-link, .blue-skin .nav-tabs .nav-link.active, .blue-skin .checkbox-custom:checked + .checkbox-custom-label:before, .blue-skin .radio-custom:checked + .radio-custom-label:before, .blue-skin .btn.pop-login, .blue-skin .single-widgets.widget_search form button, .blue-skin .single-widgets.widget_tags ul li a:hover, .blue-skin .single-widgets.widget_tags ul li a:focus, .blue-skin .pagination > .active > a, .blue-skin .pagination > .active > a:focus, .blue-skin .pagination > .active > a:hover, .blue-skin .pagination > .active > span, .blue-skin .pagination > .active > span:focus, .blue-skin .pagination > .active > span:hover, .blue-skin .pagination > li > a:focus, .blue-skin .pagination > li > a:hover {
+                                                                background-color: #1266e3;
+                                                                background: #1266e3;
+                                                            }
+
+                                                            .btn.search-btn {
+                                                                background: #f0394d;
+                                                                padding: 17px;
+                                                                border-radius: 5px;
+                                                                box-shadow: 0 5px 24px rgb(31 37 59 / 15%);
+                                                                color: #fff;
+                                                                width: 100%;
+                                                                font-size: 1.2rem;
+                                                            }
+
+                                                            .btn {
+                                                                border: 2px solid transparent;
+                                                                color: #fff;
+                                                                padding: 12px 25px;
+                                                                cursor: pointer;
+                                                                -webkit-transition: 0;
+                                                                -o-transition: 0;
+                                                                transition: 0;
+                                                                border-radius: .1rem;
+                                                            }
+
+                                                            .btn {
+                                                                display: inline-block;
+                                                                font-weight: 400;
+                                                                line-height: 1.5;
+                                                                color: #212529;
+                                                                text-align: center;
+                                                                text-decoration: none;
+                                                                vertical-align: middle;
+                                                                cursor: pointer;
+                                                                -webkit-user-select: none;
+                                                                -moz-user-select: none;
+                                                                user-select: none;
+                                                                background-color: transparent;
+                                                                border: 1px solid transparent;
+                                                                padding: .375rem .75rem;
+                                                                font-size: 1rem;
+                                                                border-radius: .25rem;
+                                                                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                            }
+
+                                                            a {
+                                                                color: #2D3954;
+                                                                text-decoration: none;
+                                                                background-color: transparent;
+                                                                -webkit-text-decoration-skip: objects;
+                                                            }
+
+                                                            a {
+                                                                color: #0d6efd;
+                                                                text-decoration: underline;
+                                                            }
+
+                                                            #text {
+                                                                margin: auto;
+                                                                color: white;
+                                                            }
+
+                                                            #heding {
+                                                                color: white;
+                                                            }
+
+                                                            .btn.search-btn1 {
+                                                                background: #f0394d;
+                                                                padding: 17px;
+                                                                border-radius: 5px;
+                                                                box-shadow: 0 5px 24px rgb(31 37 59 / 15%);
+                                                                color: #fff;
+                                                                width: auto;
+                                                                font-size: 1.2rem;
+                                                            }
+
+                                                            #content {
+                                                                position: relative;
+                                                                background-color: #f6f6f6;
+                                                                /*padding-bottom: 45px;*/
+                                                            }
+
+                                                            .wedding-item1 {
+                                                                margin-bottom: 40px;
+                                                                margin-top: 40px;
+                                                            }
+
+                                                            #profile {
+                                                                margin-bottom: 45px;
+                                                            }
+
+                                                            #featr {
+                                                                margin-top: 45px;
+                                                                margin-bottom: 0px;
+                                                            }
+
+                                                            .profile {
+                                                                float: right;
+                                                            }
+
+
+                                                            .getstart-wrap {
+                                                                background: #f0394d;
+                                                                padding: 40px 0;
+                                                                text-align: center;
+                                                            }
+
+                                                            .get-start span {
+                                                                display: inline-block;
+                                                                padding: 0 15px;
+                                                                color: #fff;
+                                                                font-size: 24px;
+                                                                font-weight: bold;
+                                                                font-family: 'Montserrat', sans-serif;
+                                                            }
+
+                                                            .get-start span a {
+                                                                text-decoration: none;
+                                                                font-size: 16px;
+                                                                font-weight: bold;
+                                                                text-transform: uppercase;
+                                                                padding: 16px 36px;
+                                                                border: 2px solid #fff;
+                                                                border-radius: 30px;
+                                                                color: #fff;
+                                                                box-shadow: 3px 5px 5px 0px rgb(1 1 1 / 40%);
+                                                                display: inline-block;
+                                                            }
+
+                                                            /**/
+                                                            .caste-wrap {
+                                                                padding: 60px 0;
+                                                            }
+
+                                                            .casteWrp {
+                                                                background: #fff;
+                                                                padding: 25px;
+                                                            }
+
+                                                            .casteWrp h3 {
+                                                                font-size: 23px;
+                                                                font-weight: bold;
+                                                                color: #d50585;
+                                                            }
+
+                                                            h1, h2, h3, h4, h5, h6 {
+                                                                font-family: 'Montserrat', sans-serif;
+                                                            }
+
+                                                            ul, ol {
+                                                                list-style: none;
+                                                            }
+
+                                                            .casteWrp ul li {
+                                                                float: left;
+                                                                width: 50%;
+                                                                position: relative;
+                                                                padding-left: 18px;
+                                                                margin-bottom: 12px;
+                                                            }
+
+                                                            .casteWrp ul li:before {
+                                                                content: "\f0da";
+                                                                font-family: 'FontAwesome';
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                color: #868181;
+                                                            }
+
+                                                            .casteWrp ul li a {
+                                                                text-decoration: none;
+                                                                font-size: 14px;
+                                                                color: #868181;
+                                                            }
+
+                                                            a {
+                                                                -webkit-transition: all .3s ease;
+                                                                -moz-transition: all .3s ease;
+                                                                transition: all .3s ease;
+                                                            }
+
+                                                            .casteWrp {
+                                                                background: #fff;
+                                                                padding: 25px;
+                                                            }
+
+                                                            .casteWrp h3 {
+                                                                font-size: 23px;
+                                                                font-weight: bold;
+                                                                color: #f0394d;
+                                                            }
+
+                                                            ul, ol {
+                                                                list-style: none;
+                                                            }
+
+                                                            .casteWrp ul li {
+                                                                float: left;
+                                                                width: 50%;
+                                                                position: relative;
+                                                                padding-left: 18px;
+                                                                margin-bottom: 12px;
+                                                            }
+
+                                                            .casteWrp ul li:before {
+                                                                content: "\f0da";
+                                                                font-family: 'FontAwesome';
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                color: #868181;
+                                                            }
+
+                                                            .casteWrp ul li a {
+                                                                text-decoration: none;
+                                                                font-size: 14px;
+                                                                color: #868181;
+                                                            }
+
+                                                            a {
+                                                                -webkit-transition: all .3s ease;
+                                                                -moz-transition: all .3s ease;
+                                                                transition: all .3s ease;
+                                                            }
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+#discover {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.discover {
+    margin-top: 48px;
+}
+#match {
+    background-color: #ddd;
+}
+#match-div{
+    margin: 16px 0px;
+}
+#mobile-img{
+    margin: 16px 0px;
+}
+#third-section{
+    padding: 48px 0px;
+}
+.third-section{
+    float: right;
+}
+@media only screen and (min-width: 600px) {
+    .sm-img {
+        margin-top: 160px;
+    }
+}
+#fourth-section{
+    padding: 48px 0px;
+    background-color: #ddd;
+}
+.fourth-section{
+    float: left;
+}
+#fifth-sec{
+    padding: 48px 0px;
+    background-color: #ed147d;
+    color: white;
+}
+#color{
+    color: white;
+}
+#six-section{
+    padding: 48px 0px;
+}
+#img{
+    width: 100%;
+    background-color: #ddd;
+}
+#six-section{
+    background-color: #ddd;
+}
+@media only screen and (min-width: 600px) {
+    .sm-img1 {
+        margin-top: 100px;
+    }
+}
+#seven-section{
+    padding: 48px 0px;
+}
+#eight-section{
+    background-color: #ddd;
+    padding: 48px 0px;
+}

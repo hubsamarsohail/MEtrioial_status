@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.dethemes.com/forever/versions/top-bottom-bar/index-title-animation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Feb 2021 16:30:50 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Metrimonial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lang.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+    <link rel="icon" href="images/favicon.jpg">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="screen" />
+    <!-- Pace -->
+    <link rel="stylesheet" href="css/preloader.css"  media="screen">
+    <link rel="stylesheet" href="css/preloader-default.css"  media="screen">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="css/flexslider/flexslider.css" type="text/css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate/animate.css" type="text/css">
+    <!-- Countdown -->
+    <link rel="stylesheet" href="css/countdown/jquery.countdown.css" type="text/css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css" type="text/css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.css" type="text/css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="css/fonts/fontello/css/fontello.css" type="text/css" media="screen" />
+    <!-- Font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Skin CSS -->
+    <!-- <link href="css/skin/light-teal/light-teal.css" rel="stylesheet" media="screen"> -->
+    <!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
+    <!-- <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen"> -->
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-50945301-2', 'dethemes.com');
+        ga('send', 'pageview');
+
+    </script>
+    <style>
+        #profile{
+            margin-bottom: 43px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .input-group-addon {
+            padding: 6px 23px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            color: #555;
+            text-align: center;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #loginn{
+            margin: 0px;
+        }
+        #myModal3{
+            padding-top:150px;
+        }
+        .si{
+            margin-right: 10px;
+        }
+        #LR>a.de-button {
+            margin-top: 2px;
+        }  a.de-button.small, span.de-button.small, input[type=submit].small {
+               padding: 4px 16px;
+               font-size: 14px;
+               border-radius: 10px;
+           }
+        #main-slider .slide-image {
+            position: relative;
+            height: inherit;
+            width: 100%;
+            background-size: cover;
+            background-position: 50% 50%;
+            /*background-color: transparent;*/
+            -webkit-transform: translateZ(0);
+        }
+        @media screen and (max-width: 580px) {
+            #logo-wrapper {
+                margin-top:33px;
+            }
+        }
+        #a{
+            color:#fff;
+        }
+        .profiles {
+            display: contents;
+            padding-right: 15px;
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div>
+    <section id="info-bar">
+        <div class="container">
+            <div class="col-xs-6 info-bar">
+                <div id="social-icons">
+                    <a href="#" class="si">
+                        <i style="font-size:18px" class="fa">&#xf09a;</i>
+                    </a>
+                    <a href="#" class="si">
+                        <i style="font-size:18px" class="fa">&#xf099;</i>
+                    </a>
+                    <a href="#" class="si">
+                        <i style="font-size:18px" class="fa">&#xf1a0;</i>
+                    </a>
+                    <a href="#" class="si">
+                        <i style="font-size:18px" class="fa">&#xf231;</i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-6 info-bar">
+                <div id="LR">
+                    <a href="#myModal3"  class="" id="de-button1 dea" data-toggle="modal">
+                        Login
+                    </a>
+                    <span>|</span>
+                    <!-- Modal HTML -->
+                    <style>
+                        #de-button2{
+                            padding-right:10px;
+                        }
+                        @media screen and (max-width: 500px) {
+                            #LR {
+                                margin-top:-15px;
+                            }
+                            #lang {
+                                margin-top:-14px;
+                            }
+                        }
+                        .dropdown-item{
+                            border-bottom: 1px solid;
+                        }
+                        #lastlen{
+                            border-bottom: none;
+                        }
+                    </style>
+
+                    <a href="#myModal2" class="" data-toggle="modal"  id="de-button2">
+                        Register
+                    </a>
+
+                    <span>-</span>
+                    <div id="lang">
+<!--                        <div class="dropdown d-inline-block pl-2 pl-md-0">-->
+<!--                            <a class="dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                                Select Language<i class="fa fa-chevron-down pl-2"></i>-->
+<!--                            </a>-->
+<!--                            <div class="dropdown-menu mt-0" aria-labelledby="dropdownMenuButton" id="seclect" style="">-->
+<!--                                <a class="dropdown-item" href="#">Arabic</a>-->
+<!--                                <a class="dropdown-item" href="#">English</a>-->
+<!--                                <a class="dropdown-item" id="lastlen" href="#">Persian</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <select class="selectpicker" data-width="fit" style="margin-left: 5px;">
+                            <option>English</option>
+                            <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Arabic</option>
+                            <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Persian</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NAVIGATION -->
+<!---->
+
+<!---->
+    <header id="nav-header">
+        <nav id="nav-bar" class="top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown">
+            <style>
+                #nav-bar.nav-center .logo-wrapper {
+                    position: absolute;
+                    margin: auto;
+                    top: 0px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+                @media (max-width:400px) and (min-width:900px) {
+                    #nav-bar.nav-center .logo-wrapper {
+                        position: absolute;
+                        margin: auto;
+                        top: 0px;
+                        bottom: 0;
+                        left: -575px;
+                        right: 0;
+                    }
+                }
+            </style>
+            <style>
+                #nav-bar.nav-center .logo-wrapper {
+                    position: absolute;
+                    margin: auto;
+                    top: 0px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+                @media (max-width:991px) and (min-width:768px) {
+                    #nav-bar.nav-center .logo-wrapper {
+                        position: absolute;
+                        margin: auto;
+                        top: 0px;
+                        bottom: 0;
+                        left: -575px;
+                        right: 0;
+                    }
+                }
+                @media (max-width:767px) and (min-width:320px) {
+                    #nav-bar.nav-center .logo-wrapper {
+                        position: absolute;
+                        margin: auto;
+                        top: -9px;
+                        bottom: 0;
+                        left: -265px;
+                        right: 0;
+                    }
+                }
+                @media screen and (max-width: 375px) {
+                    #nav-bar.nav-center .logo-wrapper {
+                        position: absolute;
+                        margin: auto;
+                        top: -9px;
+                        bottom: 0;
+                        left: -205px;
+                        right: 0;
+                    }
+                }
+            </style>
+
+            <style>
+                @media only screen and (max-width: 786px) {
+                    #LR {
+                        margin-left: 73px;
+                    }
+                }
+                @media only screen and (max-width: 443px) {
+                    #LR {
+                        margin-left: 49px;
+                    }
+                }
+                @media only screen and (max-width: 375px) {
+                    #LR {
+                        margin-left: 21px;
+                    }
+                }
+            </style>
+            <div id="nav-wrapper" style="height:80px;">
+
+                <!-- LOGO -->
+                <div class="logo-wrapper" id="logo-wrapper">
+                    <!-- CSS LOGO -->
+                    <a href="index.html">
+                        <div class="css-logo rounded">
+                            <div class="css-logo-text">
+                                <strong>G</strong><i class="de-icon-heart-1"></i><strong>P</strong>
+                            </div>
+                        </div>
+                        <!--<img src="images/logo.png" />-->
+                    </a>
+
+                    <!-- IMG LOGO
+                    <div class="img-logo">
+                        <img src="images/slide1.jpg">
+                    </div>-->
+                </div>
+                <!-- END of LOGO -->
+
+                <div id="mobile-nav">
+                    <i class="de-icon-menu"></i>
+                </div>
+
+                <ul id="nav-menu">
+                    <li  class="first-child">
+                        <a href="metrimonial.html">METRIMONIAL</a>
+                    </li>
+                    <li>
+                        <a href="#">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="#">RELIGIOUS CENTER</a>
+                    </li>
+                    <li><a href="#">ADS</a></li>
+
+                    <li   class="first-child split-margin">
+                        <a href="#">TOUR & TRIPS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">JOB ADS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">VIDEO CLIPS</a>
+                    </li>
+                    <li>
+                        <a href="#">VIDEO CLIPS</a>
+                    </li>
+                </ul>
+
+                <div class="clearboth"></div>
+
+            </div>
+
+        </nav>
+    </header> <!-- END of NAVIGATION -->
+
+    <!-- ============================ Hero Banner  Start================================== -->
+
+    <style>
+        #container {
+            position: relative;
+        }
+
+        #container::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%; /* set to 100% for full overlay width */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.8) 100%);
+        }
+        #carsl{
+            padding:0px 0px;
+        }
+        #regr{
+            color:white;
+        }
+
+    </style>
+
+    <div class="image-cover hero-banner" style="background:url(images/slide-image-1920-d.jpg) no-repeat;" id="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div>
+                        <h1 id="regr">Metrimonial</h1>
+                    </div>
+                </div>
+                <!--				<div class="col-md-6" id="carsl">-->
+                <!--					<p>Hello</p>-->
+                <!--				</div>-->
+                <style>
+                    .section-head {
+                        margin-bottom: 10px;
+                    }
+
+                    .text-uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .wt-separator-outer {
+                        overflow: hidden;
+                    }
+                    .wt-separator.style-square {
+                        width: 10px;
+                        height: 10px;
+                        background-color: transparent;
+                        border-width: 3px;
+                        border-style: solid;
+                        border-color: #2d3239;
+                    }
+
+                    .wt-separator {
+                        display: inline-block;
+                        height: 3px;
+                        width: 50px;
+                        position: relative;
+                    }
+                    .wt-separator.style-square .separator-left, .wt-separator.style-square .separator-right {
+                        height: 3px;
+                    }
+                    .wt-separator .separator-left {
+                        left: -80px;
+                    }
+                    .wt-separator .separator-left, .wt-separator .separator-right {
+                        position: absolute;
+                        top: 50%;
+                        width: 70px;
+                        height: 2px;
+                        margin-top: -1px;
+                    }
+                    .wt-separator.style-square .separator-left, .wt-separator.style-square .separator-right {
+
+                        height: 3px;
+                        background-color: #f0394d;
+                        border: none;
+                    }
+                    .wt-separator .separator-right {
+                        right: -80px;
+                    }
+                    .wt-separator .separator-left, .wt-separator .separator-right {
+                        position: absolute;
+                        top: 50%;
+                        width: 70px;
+                        height: 2px;
+                        margin-top: -1px;
+                    }
+                    .wt-box, .wt-info, .wt-tilte, .wt-tilte-inner {
+                        position: relative;
+                    }
+
+                    .wt-box {
+                        position: relative;
+                    }
+                    .rounded-bx, .wt-box, .wt-icon-box, .wt-icon-box-small, .wt-thum-bx, .wt-post-thum {
+                        position: relative;
+                    }
+                    .bg-gray {
+                        background-color: #f5f6f6;
+                    }
+                    .p-a30 {
+                        padding: 30px;
+                    }
+                    .list-checked {
+                        margin: 0 0 20px 0;
+                        padding: 0;
+                        list-style: none;
+                    }
+                    .list-checked li {
+                        padding: 5px 5px 5px 20px;
+                        position: relative;
+                    }
+                    ul.black li:before {
+                        color: #000;
+                    }
+                    .list-checked li:before {
+                        content: "\f046";
+                    }
+                    .list-checked li:before {
+                        font-family: "FontAwesome";
+                        position: absolute;
+                        left: 0;
+                        top: 6px;
+                        display: block;
+                        font-size: 15px;
+                        color: #777;
+                    }
+                    #text{
+                        margin: 55px 0 0 0;
+                    }
+
+                </style>
+<!--                <div class="col-md-6">-->
+<!--                    <div class="section-head">-->
+<!--                        <h4 class="text-uppercase">Our Attractions</h4>-->
+<!--                        <div class="wt-separator-outer">-->
+<!--                            <div class="wt-separator style-square">-->
+<!--                                <span class="separator-left bg-primary"></span>-->
+<!--                                <span class="separator-right bg-primary"></span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; OUR GALLERY BLOCK START &ndash;&gt;-->
+<!--                    <div class="wt-box bg-gray p-a30">-->
+<!--                        <ul class="list-checked black">-->
+<!--                            <li>No.1 & most trusted matrimony service</li>-->
+<!--                            <li>100% verified mobile numbers</li>-->
+<!--                            <li>Millions have found their life partner here</li>-->
+<!--                            <li>Great interpersonal communication skills</li>-->
+<!--                            <li>Providing legal and scholarly research;</li>-->
+<!--                            <li>Assisting senior consultants</li>-->
+<!--                            <li>Arranging client coordination</li>-->
+<!--                            <li>Trusted service for more than 20 years</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; OUR GALLERY BLOCK END &ndash;&gt;-->
+<!--                </div>-->
+<!--                <div class="col-md-6 text-center" id="text">-->
+<!--                    <div>-->
+<!--                        <iframe width="100%" height="350" src="https://www.youtube.com/embed/-Dbwg5oG6RU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ Hero Banner  End ================================== -->
+    <Style>
+        .pitdate-user {
+            display: inline-block;
+            margin-bottom: 30px;
+            position: relative;
+            width: 100%;
+        }
+        .pitdate-user > figure {
+            display: inline-block;
+            margin-bottom: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        figure {
+            margin: 0 0 1rem;
+        }
+        .pitdate-user > figure::before {
+            background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 83%) repeat scroll 0 0;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s linear 0s;
+        }
+        .pitdate-user > figure img {
+            width: 100%;
+            border-radius: 6px 6px 0px 0px;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+        .pitdate-user > figure > span.status {
+            bottom: -5px;
+            right: 10px;
+            border: 1px solid rgba(0,0,0,.2);
+            height: 15px;
+            width: 15px;
+        }
+        span.status.f-online {
+            background: #7FBA00;
+        }
+        span.status {
+            /*background: #bebebe none repeat scroll 0 0;*/
+            border-radius: 50%;
+            /*bottom: 0;*/
+            display: inline-block;
+            height: 10px;
+            padding: 2px;
+            /*position: absolute;*/
+            right: 0;
+            width: 10px;
+        }
+        /*span.status::after {*/
+        /*    background: white none repeat scroll 0 0;*/
+        /*    border-radius: 100%;*/
+        /*    content: "";*/
+        /*    height: 2px;*/
+        /*    left: 50%;*/
+        /*    position: absolute;*/
+        /*    top: 50%;*/
+        /*    transform: translate(-50%, -50%);*/
+        /*    width: 6px;*/
+        /*}*/
+        .pitdate-user .save-post {
+            cursor: pointer;
+            left: 7px;
+            line-height: 16px;
+            position: absolute;
+            top: 7px;
+            z-index: 10;
+        }
+        .pitdate-user .save-post > i {
+            color: #fff;
+            font-size: 16px;
+        }
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .pitdate-user .heart {
+            bottom: 5px;
+            left: 5px;
+            position: absolute;
+        }
+        .heart {
+            height: 20px;
+            transform: translateZ(0);
+            color: #b3b1c5;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            transition: all .3s ease;
+        }
+        .heart::before {
+            content: "❤";
+            position: absolute;
+            color: rgb(161, 43, 43);
+            opacity: 0;
+        }
+        .heart > span {
+            color: #fff;
+            display: inline-block;
+            font-size: 13px;
+            vertical-align: text-top;
+        }
+        .pitdate-user .more {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+
+        .more {
+            float: right;
+            position: relative;
+        }
+        .more-post-optns {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+        .more-post-optns::before {
+            background: #eee none repeat scroll 0 0;
+            border-radius: 100%;
+            content: "";
+            height: 33px;
+            left: 50%;
+            position: absolute;
+            top: 45%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all 0.2s linear 0s;
+            width: 33px;
+            z-index: 1;
+        }
+        .more-post-optns > i {
+            position: relative;
+            z-index: 2;
+        }
+        .ti-more-alt:before {
+            content: "\e6e2";
+        }
+
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        .more-post-optns > ul {
+            background: #fff none repeat scroll 0 0;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+            display: inline-block;
+            list-style: outside none none;
+            margin: 0;
+            opacity: 0;
+            padding: 15px;
+            position: absolute;
+            right: -100px;
+            top: -220%;
+            transform: scale(0);
+            transition: all 0.2s linear 0s;
+            visibility: hidden;
+            width: 175px;
+            z-index: 9;
+        }
+        .more-post-optns > ul > li {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 11.5px;
+            margin-bottom: 7px;
+            transition: all 0.2s linear 0s;
+            width: 100%;
+            font-weight: 400;
+        }
+        .more-post-optns > ul > li i {
+            color: #222;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 8px;
+            transition: all 0.1s linear 0s;
+            vertical-align: middle;
+        }
+        .fa-comment:before {
+            content: "\f075";
+        }
+        .more-post-optns > ul > li {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 11.5px;
+            margin-bottom: 7px;
+            transition: all 0.2s linear 0s;
+            width: 100%;
+            font-weight: 400;
+        }
+        .more-post-optns > ul > li i {
+            color: #222;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 8px;
+            transition: all 0.1s linear 0s;
+            vertical-align: middle;
+        }
+        .fa-flag:before {
+            content: "\f024";
+        }
+        .more-post-optns > ul > li {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 11.5px;
+            margin-bottom: 7px;
+            transition: all 0.2s linear 0s;
+            width: 100%;
+            font-weight: 400;
+        }
+        .more-post-optns > ul > li i {
+            color: #222;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 8px;
+            transition: all 0.1s linear 0s;
+            vertical-align: middle;
+        }
+        .fa-share-alt:before {
+            content: "\f1e0";
+        }
+        .more-post-optns > ul > li:last-child {
+            margin-bottom: 0;
+        }
+        .more-post-optns > ul > li {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 11.5px;
+            margin-bottom: 7px;
+            transition: all 0.2s linear 0s;
+            width: 100%;
+            font-weight: 400;
+        }
+        .more-post-optns > ul > li i {
+            color: #222;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 8px;
+            transition: all 0.1s linear 0s;
+            vertical-align: middle;
+        }
+        .fa-link:before {
+            content: "\f0c1";
+        }
+        .pitdate-user > h4 {
+            color: #535165;
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 0;
+            width: 100%;
+        }
+        a, a:hover, a:focus, a:active {
+            color: inherit;
+            outline: none;
+            -webkit-text-decoration: none;
+            -moz-text-decoration: none;
+            -ms-text-decoration: none;
+            -o-text-decoration: none;
+            text-decoration: none;
+        }
+        .pitdate-user > span {
+            display: inline-block;
+            font-size: 13px;
+            width: 80%;
+        }
+        .pitdate-user > span > i {
+            color: #333;
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .fa, .fas {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+        .fa, .fas {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+        .fa, .fab, .fad, .fal, .far, .fas {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+        }
+        .fa, .fab, .fad, .fal, .far, .fas {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+        }
+        .fa-map-marker:before {
+            content: "\f041";
+        }
+        .featured-baner > h2 > span, aside.sidebar .frnd-meta > a.main-btn2, .menu-list > li > a i, .heart-pnts > div > i, .filter-ajex > li > a:hover, .filter-ajex > li.active > a, .view-port > li.active > a, .pitdate-user > a, .pitdate-user .save-post.save > i, .share > a:hover, .member-des .bottom-meta .main-btn2 {
+            color: #ff7c7c;
+        }
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .fa-plus-circle:before {
+            content: "\f055";
+        }
+        .pitdate-user{
+            background-color: white;
+            padding-bottom: 20px;
+        }
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            border-radius: 6px;
+        }
+        .card-2 {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            border-radius: 6px;
+        }
+
+        .card-1:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .fa-heart-o {
+            color: red;
+            cursor: pointer;
+        }
+
+        .fa-heart {
+            color: red;
+            cursor: pointer;
+            background-color: white;
+            padding: 7px;
+            border-radius: 15px;
+            font-size: 24px;
+            margin-right: 90px;
+            margin-left: -40px;
+        }
+
+        .msg {
+            color: red;
+            cursor: pointer;
+            background-color: white;
+            padding: 7px;
+            border-radius: 15px;
+        }
+        .status1{
+            position: absolute;
+            left: 33%;
+            top: 90%;
+        }
+        #nam {
+            padding-top: 12px;
+        }
+        .heading{
+            margin: 50px 0px;
+        }
+
+    </Style>
+
+    <!--CONTENT SECTION-->
+    <section id="content">
+        <div class="container">
+            <h1 class="text-center heading">Featured Profiles</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+<!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+<!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+<!--                            <div class="more">-->
+<!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+<!--                                    <ul>-->
+<!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+<!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+<!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+<!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                            </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+            <h1 class="text-center heading">Agent Profiles</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="content">
+        <div class="container">
+            <h1 class="text-center heading">Customer Profiles</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 item">
+                    <div class="pitdate-user card-2">
+                        <figure><img src="http://wpkixx.com/html/pitnik/images/resources/date-user5.jpg" alt="">
+                            <a class="status1 text-center" href="#"><span id = "heart"><i class="fa fa-heart card-1" style="font-size:24px"aria-hidden="true" ></i> </span><span id = "heart1"><i style="font-size:24px" class="fa msg card-1">&#xf0e5;</i> </span></a>
+                            <!--                            <div class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></div>-->
+                            <!--                            <div class="likes heart" title="Like/Dislike">❤ <span>1.6M</span></div>-->
+                            <!--                            <div class="more">-->
+                            <!--                                <div class="more-post-optns"><i class="ti-more-alt"></i>-->
+                            <!--                                    <ul>-->
+                            <!--                                        <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>-->
+                            <!--                                        <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>-->
+                            <!--                                        <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>-->
+                            <!--                                        <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>-->
+                            <!--                                    </ul>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </figure>
+                        <h4 id="nam" class="text-center"><a href="#" title="">Sophia</a>
+                            <span class="status f-online"></span></h4>
+                        <h4 class="text-center"><a href="#" title="">40 years - stockholm</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+<!--        <div class="image-divider fixed-height" style="background-image:url(images/slide-image-1920-h.jpg);" data-stellar-background-ratio="0.5" >-->
+        <div class="image-divider fixed-height" style="background-image:url(images/slide-image-1920-h.jpg);">
+            <div class="divider-overlay"></div>
+
+            <!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
+            <div class="alignment">
+                <div class="v-align center-middle">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="animation fadeInUp">
+                                    <div id="thank-you">
+                                        <div id="thank">Thank</div>
+                                        <div id="you">You</div>
+                                    </div>
+                                </div>
+
+                                <div class="heart-divider animation delay1 fadeInUp">
+                                    <span class="white-line"></span>
+                                    <i class="de-icon-heart pink-heart"></i>
+                                    <i class="de-icon-heart white-heart"></i>
+                                    <span class="white-line"></span>
+                                </div>
+
+                                <!--<div id="footer-couple-name" class="animation delay1 fadeInUp">-->
+                                <!--	GLOBAL PLUS-->
+                                <!--</div>-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</div>
+
+
+
+<div id="myModal3" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Member Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="profile.html" method="post">
+                    <div class="form-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" placeholder="Username" required="required">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" placeholder="Password" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-block btn-lg"  id="loginn" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal2" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <form action="signup.html" method="post">
+                    <h2>Create Account</h2>
+                    <p class="lead">It's free and hardly takes more than 30 seconds.</p>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-lock"></i>
+				</span>
+                            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Signup</button>
+                    </div>
+                </form>
+                <!--	<div class="text-center">Already have an account? <a href="#">Login here</a>.-->
+                <!--</div>-->
+            </div>
+            <div class="modal-footer">
+                <!--<a href="#">Forgot Password?</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<!-- Mirrored from demo.dethemes.com/forever/versions/top-bottom-bar/index-title-animation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Feb 2021 16:30:51 GMT -->
+</html>
+
+<!-- jQuery -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Pace -->
+<script src="js/pace/pace.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap/bootstrap.js"></script>
+<!-- Modernizr -->
+<script src="js/modernizr/modernizr.js"></script>
+<!-- Device JS -->
+<script src="js/devicejs/device.js"></script>
+<!-- TinyNav -->
+<script src="js/tinynav/tinynav.min.js"></script>
+<!-- SmoothScroll -->
+<script src="js/smoothscroll/jquery.smooth-scroll.js"></script>
+<!-- Flexslider -->
+<script src="js/flexslider/jquery.flexslider.js"></script>
+<!-- Sticky -->
+<script src="js/sticky/jquery.sticky.js"></script>
+<!-- Waypoint -->
+<script src="js/waypoint/jquery.waypoints.min.js"></script>
+<!-- DoubleTapToGo -->
+<script src="js/jquery-ui-widget/jquery.ui.widget.js"></script>
+<script src="js/jquery-doubletaptogo/jquery.dcd.doubletaptogo.js"></script>
+<!-- Vide -->
+<script src="js/vide/jquery.vide.js"></script>
+<!-- Stellar -->
+<script src="js/stellar/jquery.stellar.js"></script>
+<!-- Masonry -->
+<script src="js/masonry/masonry.pkgd.min.js"></script>
+<!-- Countdown -->
+<script src="js/countdown/jquery.plugin.js"></script>
+<script src="js/countdown/jquery.countdown.js"></script>
+<!-- Countdown Labels / Localisation -->
+<script src="js/countdown/jquery.countdown-custom-label.js"></script>
+<!-- Magnific Popup -->
+<script src="js/magnific-popup/jquery.magnific-popup.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owlcarousel/owl.carousel.js"></script>
+
+<!-- Custom Core Script -->
+<script type="text/javascript" src="js/script.js"></script>
+<!-- Custom Additional Script -->
+<script type="text/javascript" src="js/main-slider-title-animation.js"></script>
+
+<script src="https://minato-application.netlify.app/js/count-to/jquery.countTo.js"></script>
+
+<script src="https://minato-application.netlify.app/js/plugin/plugin.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#heart").click(function(){
+            if($("#heart").hasClass("liked")){
+                $("#heart").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+                $("#heart").removeClass("liked");
+            }else{
+                $("#heart").html('<i class="fa fa-heart" aria-hidden="true"></i>');
+                $("#heart").addClass("liked");
+            }
+        });
+    });
+</script>
+
+
+
+
+

@@ -1,0 +1,29 @@
+.css-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    background-color: #f0394d;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+#nav-menu > li:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    /*content: '\e9bd';*/
+    color: #f0394d;/
+    text-align: center;
+}
+separator.style-square .separator-right {
+    height: 3px;
+    background-color: #f0394d
+    border: none;
+}
+.pink-heart {
+    color: #f0394d;
+    font-size: 18px;
+    position: relative;
+    z-index: 3;
+}
